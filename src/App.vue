@@ -1,19 +1,22 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <NavBar/>
+      <ProductList/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+import ProductList from './views/ProductList'
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    NavBar,
+    ProductList,
   },
 
   data: () => ({
