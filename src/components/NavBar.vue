@@ -34,7 +34,6 @@ const dialog = ref(false);
 
 const store = useStore();
 const inCart = computed(() => store.state.inCart);
-console.log("Initial inCart state:", store.state.inCart);
 
 const goToCart = () => {
   dialog.value = !dialog.value;
